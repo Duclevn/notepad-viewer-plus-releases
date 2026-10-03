@@ -1,0 +1,2 @@
+0b671904ba1bc997b5cd8c7b62ea598b73fad8e97754b99d81d172eded2be747  NotepadViewerPlus-0.4.0-x64.zip
+a9ec08fe7daef0000f3a4f36c1a3833d0401913944b0b4deef879238ef2f57e2  NotepadViewerPlus-0.4.0-x86.zip
