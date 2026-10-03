@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="520" viewBox="0 0 1400 520" role="img" aria-labelledby="title desc">
+  <title id="title">Install Notepad Viewer Plus manually</title>
+  <desc id="desc">A three-step illustration showing how to keep the complete Notepad Viewer Plus package together when installing it in the Notepad++ plugins folder.</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="9" stdDeviation="13" flood-color="#14233D" flood-opacity="0.1"/>
+    </filter>
+    <style>
+      .ui { font-family: "Segoe UI", Arial, sans-serif; }
+      .ink { fill: #17243B; }
+      .muted { fill: #6D7889; }
+      .coral { fill: #EF765E; }
+      .stroke { stroke: #D8DEE7; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <rect width="1400" height="520" fill="#FBFCFE"/>
+  <circle cx="1310" cy="-30" r="210" fill="#F8E5DF"/>
+  <circle cx="65" cy="500" r="170" fill="#EAF5F1"/>
+
+  <g class="ui">
+    <text x="70" y="70" class="ink" font-size="34" font-weight="700" letter-spacing="-0.8">Keep the complete package together</text>
+    <text x="72" y="103" class="muted" font-size="17">Extract the entire ZIP into the plugin folder, then restart Notepad++.</text>
+    <rect x="1108" y="48" width="220" height="38" rx="19" fill="#F8E5DF"/>
+    <circle cx="1130" cy="67" r="7" fill="#EF765E"/>
+    <text x="1146" y="73" class="ink" font-size="13" font-weight="700" letter-spacing="0.9">MANUAL INSTALLATION</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="70" y="140" width="548" height="318" rx="24" fill="#FFFFFF"/>
+    <rect x="70" y="140" width="548" height="62" rx="24" fill="#F2F5F8"/>
+    <rect x="70" y="176" width="548" height="26" fill="#F2F5F8"/>
+    <text x="104" y="179" class="ui ink" font-size="18" font-weight="700">The folder shape to keep</text>
+    <rect x="424" y="158" width="158" height="30" rx="15" fill="#E4F2EE"/>
+    <circle cx="441" cy="173" r="5" fill="#6FB8A5"/>
+    <text x="454" y="178" class="ui ink" font-size="12" font-weight="700">DLL + assets + notices</text>
+
+    <g class="ui" font-size="15">
+      <path d="M118 259V279H120" fill="none" stroke="#B7C3D2" stroke-width="2" stroke-linecap="round"/>
+      <path d="M142 295V322H144" fill="none" stroke="#B7C3D2" stroke-width="2" stroke-linecap="round"/>
+      <path d="M168 342V444M168 360H194M168 403H194M168 444H194" fill="none" stroke="#B7C3D2" stroke-width="2" stroke-linecap="round"/>
+
+      <path d="M95 226h20l8 8h33v25H95z" fill="#F2C36D"/>
+      <text x="166" y="246" class="ink" font-weight="700">Notepad++</text>
+      <path d="M120 268h18l6 6h26v21h-50z" fill="#F6D994"/>
+      <text x="184" y="286" class="ink">plugins</text>
+      <path d="M144 311h18l6 6h38v25h-62z" fill="#EF765E"/>
+      <text x="220" y="330" class="ink" font-weight="700">NotepadViewerPlus</text>
+
+      <rect x="194" y="350" width="18" height="20" rx="3" fill="#8EA0BE"/>
+      <path d="M198 355h10M198 360h10" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+      <text x="228" y="366" class="ink" font-weight="600">NotepadViewerPlus.dll</text>
+      <path d="M194 392h16l5 5v16h-21z" fill="#78B9A8"/>
+      <path d="M194 392h16v6h-16z" fill="#9DD2C3"/>
+      <text x="228" y="409" class="ink" font-weight="600">assets/</text>
+      <path d="M194 435h18v18h-18z" fill="#F1C96B"/>
+      <path d="M198 440h10M198 445h10" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+      <text x="228" y="450" class="ink" font-size="14" font-weight="600">THIRD-PARTY-LICENSES.txt</text>
+    </g>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="654" y="140" width="676" height="318" rx="24" fill="#FFFFFF"/>
+    <text x="690" y="179" class="ui ink" font-size="18" font-weight="700">Three small steps</text>
+    <path d="M862 290H882M1068 290H1088" stroke="#CED7E2" stroke-width="3" stroke-linecap="round"/>
+    <path d="M878 284l8 6-8 6M1084 284l8 6-8 6" fill="none" stroke="#A9B6C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <g class="ui">
+      <circle cx="742" cy="244" r="28" fill="#EF765E"/>
+      <text x="734" y="253" fill="#FFFFFF" font-size="22" font-weight="700">1</text>
+      <text x="690" y="310" class="ink" font-size="17" font-weight="700">Download ZIP</text>
+      <text x="690" y="337" class="muted" font-size="14">Choose x64 or x86 to</text>
+      <text x="690" y="358" class="muted" font-size="14">match your Notepad++.</text>
+      <path d="M730 385v22M719 396l11 11 11-11" fill="none" stroke="#EF765E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="696" y="416" width="92" height="22" rx="11" fill="#F8E5DF"/>
+      <text x="713" y="431" class="ink" font-size="11" font-weight="700">.ZIP package</text>
+
+      <circle cx="948" cy="244" r="28" fill="#6FB8A5"/>
+      <text x="940" y="253" fill="#FFFFFF" font-size="22" font-weight="700">2</text>
+      <text x="896" y="310" class="ink" font-size="17" font-weight="700">Extract all</text>
+      <text x="896" y="337" class="muted" font-size="14">Place the complete folder</text>
+      <text x="896" y="358" class="muted" font-size="14">under Notepad++ plugins.</text>
+      <path d="M936 385v22M925 396l11 11 11-11" fill="none" stroke="#6FB8A5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="902" y="416" width="92" height="22" rx="11" fill="#E4F2EE"/>
+      <text x="922" y="431" class="ink" font-size="11" font-weight="700">whole folder</text>
+
+      <circle cx="1154" cy="244" r="28" fill="#E0B454"/>
+      <text x="1146" y="253" fill="#FFFFFF" font-size="22" font-weight="700">3</text>
+      <text x="1096" y="310" class="ink" font-size="17" font-weight="700">Restart Notepad++</text>
+      <text x="1096" y="337" class="muted" font-size="14">Open a supported document</text>
+      <text x="1096" y="358" class="muted" font-size="14">and toggle the preview.</text>
+      <path d="M1142 385v22M1131 396l11 11 11-11" fill="none" stroke="#E0B454" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="1102" y="416" width="106" height="22" rx="11" fill="#F8F0D8"/>
+      <text x="1116" y="431" class="ink" font-size="11" font-weight="700">Plugins menu</text>
+    </g>
+  </g>
+</svg>

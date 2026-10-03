@@ -1,46 +1,86 @@
-# Notepad Viewer Plus 0.4.0
+<div align="center">
+  <img src="assets/hero.png" alt="Notepad Viewer Plus" width="860">
+</div>
 
-Notepad Viewer Plus is an offline, docked multi-format preview for Windows Notepad++. It can preview Markdown, math, Mermaid, PlantUML, HTML, SVG, JSON, YAML, XML, CSV/TSV, OpenAPI, images, and PDF files.
+# Notepad Viewer Plus
 
-This is a prerelease evaluation package prepared for review of a proposed Notepad++ Plugin Admin entry. It is not yet included in Plugin Admin.
+An offline, docked multi-format preview for Windows Notepad++.
 
-## Downloads
+This is the **0.4.0 public evaluation prerelease**. It is free to download and try while the [Plugin List draft PR](https://github.com/notepad-plus-plus/nppPluginList/pull/1209) is reviewed.
 
-Download the evaluation packages:
+## Download
 
-- [64-bit package](https://github.com/Duclevn/notepad-viewer-plus-releases/releases/download/v0.4.0/NotepadViewerPlus-0.4.0-x64.zip) — SHA-256: `0b671904ba1bc997b5cd8c7b62ea598b73fad8e97754b99d81d172eded2be747`
-- [32-bit package](https://github.com/Duclevn/notepad-viewer-plus-releases/releases/download/v0.4.0/NotepadViewerPlus-0.4.0-x86.zip) — SHA-256: `a9ec08fe7daef0000f3a4f36c1a3833d0401913944b0b4deef879238ef2f57e2`
+Choose the package that matches your Notepad++ architecture. In Notepad++, open **Help → About Notepad++** to check it.
 
-Use the package matching the architecture shown by **Help → About Notepad++**. ARM64 is unsupported.
+| Notepad++ | Package |
+| --- | --- |
+| 64-bit | [Download NotepadViewerPlus-0.4.0-x64.zip](https://github.com/Duclevn/notepad-viewer-plus-releases/releases/download/v0.4.0/NotepadViewerPlus-0.4.0-x64.zip) |
+| 32-bit | [Download NotepadViewerPlus-0.4.0-x86.zip](https://github.com/Duclevn/notepad-viewer-plus-releases/releases/download/v0.4.0/NotepadViewerPlus-0.4.0-x86.zip) |
+
+See [SHA256SUMS.txt](SHA256SUMS.txt) for download checksums. ARM64 is not supported.
+
+## What you can preview
+
+- Markdown with syntax highlighting, math, and a table of contents.
+- Mermaid and PlantUML diagrams rendered with local assets.
+- Sanitized HTML and SVG.
+- JSON, YAML, and XML trees.
+- CSV and TSV tables.
+- OpenAPI documents, images, and PDF files.
+
+The preview opens as a docked panel and includes a toolbar toggle, keyboard shortcut, and light/dark/system theme handling. Rendering is offline by default, with an optional setting for HTTPS images.
+
+## Screenshots
+
+The screenshots below show the real Notepad Viewer Plus 0.4.0 interface with synthetic example data. Open an image to see it at full size. The banner above is a conceptual illustration.
+
+![Markdown preview in Notepad Viewer Plus](assets/screenshots/markdown.jpg)
+
+_Markdown, Mermaid, tables, and math in the real 0.4.0 UI. The “Aurora” project is fictional._
+
+![Structured JSON preview in Notepad Viewer Plus](assets/screenshots/structured-json.jpg)
+
+_Explore JSON as a tree beside its source. All values shown are synthetic example data._
+
+## Known limitation
+
+Some math expressions may need a refresh after the initial render or resizing the preview pane. Use **Plugins → Notepad Viewer Plus → Refresh Preview**, or hide and show the panel.
 
 ## Requirements
 
 - Windows with a matching 64-bit or 32-bit Notepad++ installation.
-- Microsoft Edge WebView2 Evergreen Runtime.
-- Microsoft Visual C++ v14 Redistributable matching the plugin architecture.
+- [Microsoft Edge WebView2 Evergreen Runtime](https://developer.microsoft.com/en-us/microsoft-edge/webview2).
+- [Microsoft Visual C++ v14 Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist) matching the plugin architecture.
 
-The x64 package was observed in an isolated Notepad++ 8.9.8.1 host. The x86 package was built and structurally validated, but has not had live editor testing. No broader supported-version range is claimed by this prerelease.
+The x64 package was exercised in an isolated Notepad++ 8.9.8.1 host. The x86 package was built and structurally validated, but has not had live editor testing. This prerelease does not claim a wider supported-version range.
 
-## Manual installation
+## Install manually
 
-1. Close every Notepad++ window.
-2. Extract the entire ZIP into `<Notepad++>\plugins\NotepadViewerPlus\`.
-3. Confirm that `NotepadViewerPlus.dll` is directly in that directory and that the `assets\` directory is beside it.
-4. Keep `THIRD-PARTY-LICENSES.txt` and the included notices with the package.
-5. Restart Notepad++. Use **Plugins → Notepad Viewer Plus → Toggle Preview**, **Ctrl+Alt+P**, or the toolbar button.
+The short version is:
 
-Do not copy only the DLL with **Import plugin(s)**; the renderer assets are required. Close Notepad++ before upgrading or removing the plugin.
+1. Save your work and close every Notepad++ window.
+2. Download the matching ZIP above and extract the **entire package** into `<Notepad++>\plugins\NotepadViewerPlus\`.
+3. Confirm that `NotepadViewerPlus.dll` is directly in that folder and that `assets\` is beside it.
+4. Restart Notepad++. Open **Plugins → Notepad Viewer Plus → Toggle Preview**, press **Ctrl+Alt+P**, or use the toolbar button.
 
-## Evaluation terms and source
+Read the complete [manual installation guide](docs/INSTALLATION.md) for standard and portable paths, Windows download handling, upgrades, removal, and troubleshooting. The steps follow the [official Notepad++ manual installation guidance](https://npp-user-manual.org/docs/plugins/#install-plugin-manually), with the [official source documentation](https://github.com/notepad-plus-plus/npp-usermanual/blob/master/content/docs/plugins.md) available as a fallback reference.
 
-The author makes these binaries available for free download, installation, and use for evaluation. The original C++ and TypeScript source repository remains private. This review statement is not an effective project license and grants no broader source or redistribution rights.
+Do not use **Import plugin(s)** to copy only the DLL. This plugin needs its renderer assets and included notices alongside the DLL.
 
-The broader proposed terms for free personal/business use and redistribution of complete unchanged packages remain conditional on the licensing clarification in [official template issue #28](https://github.com/npp-plugins/plugintemplate/issues/28). The package does not claim a GPL exception or complete licensing clearance. Third-party components retain their own licenses; their notices are included in each ZIP.
+## Plugin Admin
 
-## Known limitation
+The plugin is not available in Plugin Admin yet. The [x64 Plugin List draft PR #1209](https://github.com/notepad-plus-plus/nppPluginList/pull/1209) is open for maintainer review. After an entry is accepted and appears in Plugin Admin, the [installation guide](docs/INSTALLATION.md#install-after-plugin-admin-acceptance) explains the normal **Plugins → Plugins Admin** flow.
 
-Some math expressions can remain clipped after widening a very narrow preview pane. **Refresh Preview** or hide and show the preview to render the expression again.
+## Updates and removal
 
-The preview is offline by default. Remote navigation and remote definitions are blocked; an explicit remote-image setting can allow HTTPS images. PlantUML does not require a server or Java installation.
+Close Notepad++ before upgrading. Keep a backup of the existing `NotepadViewerPlus` folder, then replace it with the complete new ZIP contents. To remove the plugin, close Notepad++ and delete only its `plugins\NotepadViewerPlus\` folder.
 
-For evaluation reports, use the [release repository issue tracker](https://github.com/Duclevn/notepad-viewer-plus-releases/issues) and include the plugin version, Notepad++ version and architecture, WebView2 version, and a small non-sensitive example.
+## Terms and source
+
+This evaluation package is provided free for download, installation, and running. The limited review permission is described in [REVIEW-TERMS.md](REVIEW-TERMS.md). The broader proposed terms for personal/business use and redistribution of complete unchanged packages remain conditional on the [licensing clarification in issue #28](https://github.com/npp-plugins/plugintemplate/issues/28). Third-party notices and license texts are included in the ZIP; no project license or GPL exception is claimed here.
+
+The preferred C++ and TypeScript source repository remains private. The shipped renderer assets are necessarily present in the package and can be inspected.
+
+## Help and feedback
+
+Report evaluation issues in the [release repository issue tracker](https://github.com/Duclevn/notepad-viewer-plus-releases/issues). Include the plugin version, Notepad++ version and architecture, WebView2 version, and a small non-sensitive example. Start with [INSTALLATION.md](docs/INSTALLATION.md) if the plugin does not appear or the preview is blank.
