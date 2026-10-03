@@ -24,7 +24,7 @@ Each ZIP contains the plugin DLL at the archive root, the renderer assets, and t
 
 The candidate passed the renderer version check, TypeScript check, 71 renderer tests, production build, strict size gate, native Release builds and CTest for x64 and x86, CPack, and structural package validation for both architectures. The x64 package was observed in an isolated portable Notepad++ 8.9.8.1 host: startup stayed hidden, the preview docked, the initial floating window had a usable content area, saved floating geometry was restored, and the math regression fixture rendered at normal width.
 
-The x86 package was built and structurally validated but has not had live editor testing. The full install, upgrade, removal, restart, and update flow through the official debug Plugin Admin path remains to be tested.
+The x86 package was also exercised in an isolated portable Notepad++ 8.9.8.1 host. In the official Plugin Admin debug workflow, installation, removal, and updating from the 0.3.0 x86 package to 0.4.0 completed with automatic restarts. The installed 0.4.0 payload matched all 61 files in the published x86 ZIP. Broader host/runtime coverage and settings-retention checks remain open.
 
 ## Known limitation and remaining review work
 

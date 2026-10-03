@@ -14,7 +14,7 @@ You need:
 - [Microsoft Edge WebView2 Evergreen Runtime](https://developer.microsoft.com/en-us/microsoft-edge/webview2).
 - [Microsoft Visual C++ v14 Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist) matching the Notepad++ architecture.
 
-ARM64 is not supported. The x64 package was exercised in an isolated Notepad++ 8.9.8.1 host. The x86 package was built and structurally validated, but has not had live editor testing.
+ARM64 is not supported. Both packages were exercised in isolated Notepad++ 8.9.8.1 hosts. The x86 package also passed a focused Plugin Admin debug install, update, and removal flow.
 
 The official reference is [Install a plugin manually](https://npp-user-manual.org/docs/plugins/#install-plugin-manually). The [Notepad++ user manual source](https://github.com/notepad-plus-plus/npp-usermanual/blob/master/content/docs/plugins.md) is also available if the rendered manual is unavailable.
 

@@ -1,7 +1,3 @@
-<div align="center">
-  <img src="assets/hero.png" alt="Notepad Viewer Plus" width="860">
-</div>
-
 # Notepad Viewer Plus
 
 An offline, docked multi-format preview for Windows Notepad++.
@@ -32,15 +28,23 @@ The preview opens as a docked panel and includes a toolbar toggle, keyboard shor
 
 ## Screenshots
 
-The screenshots below show the real Notepad Viewer Plus 0.4.0 interface with synthetic example data. Open an image to see it at full size. The banner above is a conceptual illustration.
+These screenshots were captured from Notepad Viewer Plus 0.4.0 running inside Notepad++ 8.9.8.1. The example documents are fictional. Open an image to see it at full size.
 
 ![Markdown preview in Notepad Viewer Plus](assets/screenshots/markdown.jpg)
 
 _Markdown, Mermaid, tables, and math in the real 0.4.0 UI. The “Aurora” project is fictional._
 
-![Structured JSON preview in Notepad Viewer Plus](assets/screenshots/structured-json.jpg)
+![PlantUML sequence diagram preview in Notepad Viewer Plus](assets/screenshots/plantuml.jpg)
 
-_Explore JSON as a tree beside its source. All values shown are synthetic example data._
+_PlantUML sequence diagram rendered locally beside its source._
+
+![PDF preview in Notepad Viewer Plus](assets/screenshots/pdf.jpg)
+
+_A fictional project brief in the built-in PDF viewer._
+
+![OpenAPI preview in Notepad Viewer Plus](assets/screenshots/openapi.jpg)
+
+_OpenAPI documentation for a fictional library service, rendered without a server._
 
 ## Known limitation
 
@@ -52,7 +56,7 @@ Some math expressions may need a refresh after the initial render or resizing th
 - [Microsoft Edge WebView2 Evergreen Runtime](https://developer.microsoft.com/en-us/microsoft-edge/webview2).
 - [Microsoft Visual C++ v14 Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist) matching the plugin architecture.
 
-The x64 package was exercised in an isolated Notepad++ 8.9.8.1 host. The x86 package was built and structurally validated, but has not had live editor testing. This prerelease does not claim a wider supported-version range.
+Both packages were exercised in isolated Notepad++ 8.9.8.1 hosts. The x86 package also passed a focused Plugin Admin debug install, update, and removal flow. This prerelease does not claim a wider supported-version range.
 
 ## Install manually
 
